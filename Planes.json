@@ -1,0 +1,229 @@
+{
+    "planes": [
+      {
+        "empresa": "EPM (Empresas Públicas de Medellín)",
+        "nombre_plan": "Plan Energía Básica",
+        "descripcion": "Plan diseñado para usuarios residenciales con un bajo consumo de energía.",
+        "precio": "$30,000 COP",
+        "imagen": "https://example.com/imagen1.jpg"
+      },
+      {
+        "empresa": "EPM (Empresas Públicas de Medellín)",
+        "nombre_plan": "Plan Energía Intermedio",
+        "descripcion": "Plan intermedio para hogares con un consumo de energía moderado.",
+        "precio": "$50,000 COP",
+        "imagen": "https://example.com/imagen2.jpg"
+      },
+      {
+        "empresa": "Grupo Nutresa",
+        "nombre_plan": "Plan Ahorro Alimenticio",
+        "descripcion": "Descuentos exclusivos en productos de la marca para clientes frecuentes.",
+        "precio": "$15,000 COP",
+        "imagen": "https://example.com/imagen3.jpg"
+      },
+      {
+        "empresa": "Grupo Nutresa",
+        "nombre_plan": "Plan Nutrición Balanceada",
+        "descripcion": "Plan con productos alimenticios saludables y balanceados.",
+        "precio": "$100,000 COP",
+        "imagen": "https://example.com/imagen4.jpg"
+      },
+      {
+        "empresa": "Postobón",
+        "nombre_plan": "Plan Refresco Familiar",
+        "descripcion": "Paquete de refrescos Postobón para el hogar.",
+        "precio": "$20,000 COP",
+        "imagen": "https://example.com/imagen5.jpg"
+      },
+      {
+        "empresa": "Postobón",
+        "nombre_plan": "Plan Gaseosas Premium",
+        "descripcion": "Planes de gaseosas premium de las marcas más exclusivas.",
+        "precio": "$45,000 COP",
+        "imagen": "https://example.com/imagen6.jpg"
+      },
+      {
+        "empresa": "Avianca",
+        "nombre_plan": "Plan Vuelo Nacional",
+        "descripcion": "Vuelos nacionales con descuentos especiales para viajes frecuentes.",
+        "precio": "$150,000 COP",
+        "imagen": "https://example.com/imagen7.jpg"
+      },
+      {
+        "empresa": "Avianca",
+        "nombre_plan": "Plan Vuelo Internacional",
+        "descripcion": "Ofertas en vuelos internacionales con beneficios exclusivos.",
+        "precio": "$500,000 COP",
+        "imagen": "https://example.com/imagen8.jpg"
+      },
+      {
+        "empresa": "Alpina",
+        "nombre_plan": "Plan Lácteos Saludables",
+        "descripcion": "Descuentos en productos lácteos de la marca Alpina.",
+        "precio": "$40,000 COP",
+        "imagen": "https://example.com/imagen9.jpg"
+      },
+      {
+        "empresa": "Alpina",
+        "nombre_plan": "Plan Yogurt y Quesos",
+        "descripcion": "Paquete promocional con productos de yogurt y quesos Alpina.",
+        "precio": "$60,000 COP",
+        "imagen": "https://example.com/imagen10.jpg"
+      },
+      {
+        "empresa": "TigoUne",
+        "nombre_plan": "Plan Internet Básico",
+        "descripcion": "Plan con conexión a internet de bajo costo y excelente velocidad.",
+        "precio": "$60,000 COP",
+        "imagen": "https://example.com/imagen11.jpg"
+      },
+      {
+        "empresa": "TigoUne",
+        "nombre_plan": "Plan Internet Avanzado",
+        "descripcion": "Plan avanzado con altas velocidades para hogares con múltiples dispositivos.",
+        "precio": "$120,000 COP",
+        "imagen": "https://example.com/imagen12.jpg"
+      },
+      {
+        "empresa": "Bancolombia",
+        "nombre_plan": "Plan Ahorro Familiar",
+        "descripcion": "Cuenta de ahorro familiar con beneficios exclusivos y tasas preferenciales.",
+        "precio": "$0 COP",
+        "imagen": "https://example.com/imagen13.jpg"
+      },
+      {
+        "empresa": "Bancolombia",
+        "nombre_plan": "Plan Crédito Especial",
+        "descripcion": "Plan de crédito con tasa de interés preferencial para compras en línea.",
+        "precio": "$0 COP",
+        "imagen": "https://example.com/imagen14.jpg"
+      },
+      {
+        "empresa": "Sodimac Homecenter",
+        "nombre_plan": "Plan Hogar Completo",
+        "descripcion": "Paquete de productos para remodelación del hogar con descuentos exclusivos.",
+        "precio": "$250,000 COP",
+        "imagen": "https://example.com/imagen15.jpg"
+      },
+      {
+        "empresa": "Sodimac Homecenter",
+        "nombre_plan": "Plan Herramientas y Materiales",
+        "descripcion": "Descuentos en herramientas y materiales de construcción para proyectos personales.",
+        "precio": "$100,000 COP",
+        "imagen": "https://example.com/imagen16.jpg"
+      },
+      {
+        "empresa": "Café San Alberto",
+        "nombre_plan": "Plan Café Premium",
+        "descripcion": "Suscripción mensual a café premium de alta calidad.",
+        "precio": "$75,000 COP",
+        "imagen": "https://example.com/imagen17.jpg"
+      },
+      {
+        "empresa": "Café San Alberto",
+        "nombre_plan": "Plan Café Corporativo",
+        "descripcion": "Descuento por compra al por mayor de café premium para oficinas.",
+        "precio": "$300,000 COP",
+        "imagen": "https://example.com/imagen18.jpg"
+      },
+      {
+        "empresa": "Bavaria",
+        "nombre_plan": "Plan Cervezas Premium",
+        "descripcion": "Descuento en cervezas premium y productos relacionados.",
+        "precio": "$120,000 COP",
+        "imagen": "https://example.com/imagen19.jpg"
+      },
+      {
+        "empresa": "Bavaria",
+        "nombre_plan": "Plan Cerveza Familiar",
+        "descripcion": "Paquete de cervezas y bebidas de la marca Bavaria para eventos familiares.",
+        "precio": "$50,000 COP",
+        "imagen": "https://example.com/imagen20.jpg"
+      },
+      {
+        "empresa": "Fabricato",
+        "nombre_plan": "Plan Textil Empresas",
+        "descripcion": "Plan para empresas que necesitan textiles al por mayor con descuentos.",
+        "precio": "$200,000 COP",
+        "imagen": "https://example.com/imagen21.jpg"
+      },
+      {
+        "empresa": "Fabricato",
+        "nombre_plan": "Plan Ropa Casual",
+        "descripcion": "Plan de ropa casual para clientes particulares con un descuento del 10%.",
+        "precio": "$80,000 COP",
+        "imagen": "https://example.com/imagen22.jpg"
+      },
+      {
+        "empresa": "Celsia",
+        "nombre_plan": "Plan Energía Solar",
+        "descripcion": "Instalación de paneles solares en hogares y empresas con descuentos especiales.",
+        "precio": "$1,500,000 COP",
+        "imagen": "https://example.com/imagen23.jpg"
+      },
+      {
+        "empresa": "Celsia",
+        "nombre_plan": "Plan Energía Eficiente",
+        "descripcion": "Planes con tarifas de energía eficientes para clientes residenciales.",
+        "precio": "$100,000 COP",
+        "imagen": "https://example.com/imagen24.jpg"
+      },
+      {
+        "empresa": "Cementos Argos",
+        "nombre_plan": "Plan Concreto de Obra",
+        "descripcion": "Descuentos por compras al por mayor de concreto y materiales para obras.",
+        "precio": "$250,000 COP",
+        "imagen": "https://example.com/imagen25.jpg"
+      },
+      {
+        "empresa": "Cementos Argos",
+        "nombre_plan": "Plan Cemento Premium",
+        "descripcion": "Cemento de alta calidad para proyectos industriales y comerciales.",
+        "precio": "$350,000 COP",
+        "imagen": "https://example.com/imagen26.jpg"
+      },
+      {
+        "empresa": "Frutales de Antioquia",
+        "nombre_plan": "Plan Jugos Naturales",
+        "descripcion": "Paquete de jugos naturales frescos de frutas cultivadas en Antioquia.",
+        "precio": "$45,000 COP",
+        "imagen": "https://example.com/imagen27.jpg"
+      },
+      {
+        "empresa": "Frutales de Antioquia",
+        "nombre_plan": "Plan Fruta Fresca",
+        "descripcion": "Suscripción a entregas semanales de frutas frescas directamente en tu hogar.",
+        "precio": "$60,000 COP",
+        "imagen": "https://example.com/imagen28.jpg"
+      },
+      {
+        "empresa": "Grupo Sancho",
+        "nombre_plan": "Plan Consumo Corporativo",
+        "descripcion": "Descuento para empresas que compran productos de consumo masivo al por mayor.",
+        "precio": "$500,000 COP",
+        "imagen": "https://example.com/imagen29.jpg"
+      },
+      {
+        "empresa": "Grupo Sancho",
+        "nombre_plan": "Plan Consumo Hogar",
+        "descripcion": "Paquete con productos esenciales para el hogar con descuento.",
+        "precio": "$100,000 COP",
+        "imagen": "https://example.com/imagen30.jpg"
+      },
+      {
+        "empresa": "Cadefuturo",
+        "nombre_plan": "Plan Consultoría Educativa",
+        "descripcion": "Asesoría educativa para padres y estudiantes interesados en futuros educativos.",
+        "precio": "$250,000 COP",
+        "imagen": "https://example.com/imagen31.jpg"
+      },
+      {
+        "empresa": "Cadefuturo",
+        "nombre_plan": "Plan Cursos Extraescolares",
+        "descripcion": "Descuento en cursos y actividades extraescolares para niños y jóvenes.",
+        "precio": "$120,000 COP",
+        "imagen": "https://example.com/imagen32.jpg"
+      }
+    ]
+  }
+      

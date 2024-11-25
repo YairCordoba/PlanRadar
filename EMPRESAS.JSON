@@ -1,0 +1,201 @@
+{
+    "empresas": [
+      {
+        "nombre": "EPM (Empresas Públicas de Medellín)",
+        "descripcion": "Empresa pública encargada de la prestación de servicios de energía eléctrica, agua, gas y telecomunicaciones en Medellín.",
+        "direccion": "Calle 57 # 42-25, Medellín, Antioquia",
+        "telefono": "(+57) 604 514 1111",
+        "sitio_web": "https://www.epm.com.co"
+      },
+      {
+        "nombre": "Grupo Nutresa",
+        "descripcion": "Uno de los conglomerados más grandes en la industria de alimentos en Colombia, con marcas reconocidas en el mercado.",
+        "direccion": "Carrera 48 # 26-85, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 86 00",
+        "sitio_web": "https://www.gruponutresa.com"
+      },
+      {
+        "nombre": "Postobón",
+        "descripcion": "Líder en bebidas no alcohólicas en Colombia, con productos como jugos, gaseosas y aguas.",
+        "direccion": "Calle 13 # 29-50, Medellín, Antioquia",
+        "telefono": "(+57) 604 510 1010",
+        "sitio_web": "https://www.postobon.com.co"
+      },
+      {
+        "nombre": "Avianca",
+        "descripcion": "Una de las aerolíneas más importantes de América Latina, con sede en Bogotá y operaciones en todo el continente.",
+        "direccion": "Carrera 75 # 36-29, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 99 99",
+        "sitio_web": "https://www.avianca.com"
+      },
+      {
+        "nombre": "Alpina",
+        "descripcion": "Empresa de alimentos dedicada a la producción de productos lácteos y derivados.",
+        "direccion": "Carrera 43 # 50-80, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 26 66",
+        "sitio_web": "https://www.alpina.com"
+      },
+      {
+        "nombre": "TigoUne",
+        "descripcion": "Proveedor de servicios de telecomunicaciones como internet, televisión y telefonía móvil.",
+        "direccion": "Calle 44 # 52-90, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 11 11",
+        "sitio_web": "https://www.tigo.com.co"
+      },
+      {
+        "nombre": "Bancolombia",
+        "descripcion": "Uno de los bancos más grandes de Colombia, con productos y servicios financieros tanto para empresas como personas.",
+        "direccion": "Carrera 50 # 48-34, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 50 50",
+        "sitio_web": "https://www.grupobancolombia.com"
+      },
+      {
+        "nombre": "Sodimac Homecenter",
+        "descripcion": "Cadena de tiendas dedicada a la venta de productos para la construcción, remodelación y decoración del hogar.",
+        "direccion": "Calle 34 # 53-56, Medellín, Antioquia",
+        "telefono": "(+57) 604 377 77 77",
+        "sitio_web": "https://www.homecenter.com.co"
+      },
+      {
+        "nombre": "Café San Alberto",
+        "descripcion": "Famoso productor y comercializador de café premium colombiano.",
+        "direccion": "Carrera 35 # 10-35, Medellín, Antioquia",
+        "telefono": "(+57) 604 480 20 00",
+        "sitio_web": "https://www.sanalberto.com.co"
+      },
+      {
+        "nombre": "Bavaria",
+        "descripcion": "Empresa líder en la industria cervecera en Colombia, conocida por marcas como Águila, Club Colombia y Poker.",
+        "direccion": "Calle 25 # 38-50, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 10 10",
+        "sitio_web": "https://www.bavaria.co"
+      },
+      {
+        "nombre": "Fabricato",
+        "descripcion": "Una de las principales empresas productoras de textiles en Colombia.",
+        "direccion": "Calle 15 # 55-40, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 22 22",
+        "sitio_web": "https://www.fabricato.com"
+      },
+      {
+        "nombre": "Celsia",
+        "descripcion": "Compañía dedicada a la generación, distribución y comercialización de energía eléctrica.",
+        "direccion": "Carrera 48 # 24-65, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 88 88",
+        "sitio_web": "https://www.celsia.com"
+      },
+      {
+        "nombre": "Cementos Argos",
+        "descripcion": "Empresa de fabricación y comercialización de cemento y concreto, con presencia en varios países.",
+        "direccion": "Calle 10 # 23-50, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 55 55",
+        "sitio_web": "https://www.argos.co"
+      },
+      {
+        "nombre": "Frutales de Antioquia",
+        "descripcion": "Empresa dedicada a la producción y comercialización de frutas frescas y jugos naturales.",
+        "direccion": "Carrera 60 # 24-40, Medellín, Antioquia",
+        "telefono": "(+57) 604 480 22 11",
+        "sitio_web": "https://www.frutalesantioquia.com"
+      },
+      {
+        "nombre": "Grupo Sancho",
+        "descripcion": "Conglomerado de empresas dedicadas a la distribución de productos de consumo masivo, como alimentos y bebidas.",
+        "direccion": "Calle 52 # 60-70, Medellín, Antioquia",
+        "telefono": "(+57) 604 342 11 99",
+        "sitio_web": "https://www.gruposancho.com"
+      },
+      {
+        "nombre": "Comfama",
+        "descripcion": "Caja de compensación familiar que ofrece servicios de salud, educación, recreación y bienestar.",
+        "direccion": "Calle 49 # 65-32, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 77 00",
+        "sitio_web": "https://www.comfama.com.co"
+      },
+      {
+        "nombre": "Crepes & Waffles",
+        "descripcion": "Restaurante y cadena de comida especializada en crepes, waffles y otros platos de cocina internacional.",
+        "direccion": "Calle 10 # 50-70, Medellín, Antioquia",
+        "telefono": "(+57) 604 432 12 34",
+        "sitio_web": "https://www.crepesywaffles.com"
+      },
+      {
+        "nombre": "Helados La Fama",
+        "descripcion": "Empresa de fabricación y comercialización de helados artesanales, con productos reconocidos en el país.",
+        "direccion": "Carrera 32 # 54-60, Medellín, Antioquia",
+        "telefono": "(+57) 604 250 55 55",
+        "sitio_web": "https://www.la-fama.com"
+      },
+      {
+        "nombre": "Rappi",
+        "descripcion": "Aplicación de delivery que ofrece productos de restaurantes, supermercados y tiendas en Medellín y otras ciudades.",
+        "direccion": "Carrera 35 # 10-40, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 12 12",
+        "sitio_web": "https://www.rappi.com"
+      },
+      {
+        "nombre": "Alkosto",
+        "descripcion": "Cadena de tiendas de productos electrónicos, electrodomésticos y artículos para el hogar.",
+        "direccion": "Calle 44 # 58-80, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 00 00",
+        "sitio_web": "https://www.alkosto.com"
+      },
+      {
+        "nombre": "Sura",
+        "descripcion": "Grupo empresarial dedicado a seguros, pensiones y servicios financieros.",
+        "direccion": "Carrera 43A # 10-30, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 22 22",
+        "sitio_web": "https://www.sura.com.co"
+      },
+      {
+        "nombre": "Exito",
+        "descripcion": "Cadena de supermercados de alimentos, productos de cuidado personal y hogar.",
+        "direccion": "Calle 47 # 79-50, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 50 50",
+        "sitio_web": "https://www.exito.com"
+      },
+      {
+        "nombre": "Tienda D1",
+        "descripcion": "Cadena de supermercados de descuento, especializada en productos básicos de consumo masivo.",
+        "direccion": "Calle 15 # 47-80, Medellín, Antioquia",
+        "telefono": "(+57) 604 341 00 00",
+        "sitio_web": "https://www.d1.com.co"
+      },
+      {
+        "nombre": "Freskaleche",
+        "descripcion": "Empresa dedicada a la producción y comercialización de productos lácteos frescos.",
+        "direccion": "Carrera 32 # 10-50, Medellín, Antioquia",
+        "telefono": "(+57) 604 341 10 10",
+        "sitio_web": "https://www.freskaleche.com.co"
+      },
+      {
+        "nombre": "Arturo Calle",
+        "descripcion": "Marca de ropa masculina que se destaca por sus diseños y productos de alta calidad.",
+        "direccion": "Calle 45 # 60-70, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 33 33",
+        "sitio_web": "https://www.arturocalle.com"
+      },
+      {
+        "nombre": "Miniso",
+        "descripcion": "Tiendas de productos japoneses, ofreciendo artículos de tecnología, hogar, belleza y más.",
+        "direccion": "Calle 47 # 57-90, Medellín, Antioquia",
+        "telefono": "(+57) 604 234 56 78",
+        "sitio_web": "https://www.miniso.com.co"
+      },
+      {
+        "nombre": "Homecenter",
+        "descripcion": "Una de las principales cadenas de tiendas en Colombia especializada en artículos de construcción, decoración y hogar.",
+        "direccion": "Carrera 45 # 38-60, Medellín, Antioquia",
+        "telefono": "(+57) 604 342 33 33",
+        "sitio_web": "https://www.homecenter.com.co"
+      },
+      {
+        "nombre": "La 14",
+        "descripcion": "Cadena de supermercados de grandes superficies, con una amplia oferta de productos y servicios.",
+        "direccion": "Calle 58 # 30-80, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 66 66",
+        "sitio_web": "https://www.la14.com.co"
+      }
+    ]
+  }
+  

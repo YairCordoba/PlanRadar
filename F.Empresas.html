@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>PLAN RADAR</title>
+    <style>
+        /* Estilo para la fila del formulario */
+        .form-row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        /* Estilo para la imagen */
+        .left-image {
+            flex: 1; /* Ocupa 1 parte del contenedor */
+            max-width: 200px; /* Ancho máximo de la imagen */
+            margin-right: 20px; /* Espacio entre la imagen y el formulario */
+            display: flex;
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra verticalmente si la imagen es más pequeña */
+        }
+
+        .left-image img {
+            width: 100%; /* La imagen ocupará todo el contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+            border-radius: 10px; /* Bordes redondeados en la imagen */
+        }
+
+        /* Contenedor del Formulario */
+        .form-container {
+            flex: 2; /* Ocupa 2 partes del contenedor */
+        }
+
+        /* Títulos */
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para los inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus {
+            border-color: #f1a501;
+            outline: none;
+        }
+
+        /* Botón */
+        button {
+            background-color: #f1a501;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #e09401;
+        }
+
+        /* Enlaces */
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p a {
+            color: #f1a501;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para el mensaje flotante */
+        .popup-message {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f1a501;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .popup-message.show {
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <main class="main__content__area">
+      <!-- Header Area -->
+      <header class="header-area">
+        <div class="container">
+          <!-- Navbar for Header Menu -->
+          <div class="row justify-content-space-between align-items-center">
+            <!-- Logo Section -->
+            <div class="logo">
+              <a href="index.html">
+                <img src="image-removebg-preview.ico" alt="logo" />
+              </a>
+            </div>
+
+            <!-- Main Navigation Menu -->
+            <div class="main__menu">
+              <nav class="navbar">
+                <ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="2 copy.html">ARMA TU PLAN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="PLANES.HTML">PLANES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="F.Usuarios.html">REGISTRO_USUARIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="F.Empresas.html">REGISTRO_EMPRESAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.php">LOGIN</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- User Registration Section -->
+      <div class="container">
+
+        <div class="form-container">
+            <h2>Registro de Empresa</h2>
+            <form method="POST" id="registrationForm">
+                <input type="text" name="nombre_empresa" placeholder="Nombre de la Empresa" required>
+                <textarea name="descripcion" placeholder="Descripción de la Empresa" required></textarea>
+                <input type="email" name="correo" placeholder="Correo de la Empresa" required>
+                <input type="tel" name="telefono" placeholder="Teléfono de la Empresa">
+
+                <!-- Etiqueta para la selección de categoría -->
+                <label for="categoria_id">Selecciona una categoría:</label>
+                <select name="categoria_id" id="categoria_id" required>
+                    <option value="">Selecciona una categoría</option>
+                    <option value="1">Restaurantes</option>
+                    <option value="2">Cafeterías</option>
+                    <option value="3">Supermercados</option>
+                    <option value="4">Tiendas de Ropa</option>
+                    <option value="5">Tiendas de Tecnología</option>
+                    <option value="6">Consultorios Médicos</option>
+                    <option value="7">Clínicas</option>
+                    <option value="8">Centros Comerciales</option>
+                    <option value="9">Parques de Diversiones</option>
+                    <option value="10">Hoteles</option>
+                    <option value="11">Agencias de Viajes</option>
+                    <option value="12">Empresas de Construcción</option>
+                    <option value="13">Servicios Financieros</option>
+                    <option value="14">Educación</option>
+                    <option value="15">Servicios de Transporte</option>
+                </select>
+
+                <input type="text" name="nit" placeholder="NIT de la Empresa" required>
+                
+                <!-- Opciones de las empresas -->
+                <label>
+                    <input type="checkbox" name="tiene_parqueadero" value="1"> Tiene parqueadero
+                </label>
+                <label>
+                    <input type="checkbox" name="zona_discapacitados" value="1"> Zona para discapacitados
+                </label>
+                <label>
+                    <input type="checkbox" name="acepta_mascotas" value="1"> Acepta mascotas
+                </label>
+
+                <input type="number" step="0.01" name="monto_minimo" placeholder="Monto mínimo" required>
+                <input type="text" name="direccion" placeholder="Dirección de la Empresa" required>
+
+                <!-- Campo para contraseña -->
+                <input type="password" name="contraseña" placeholder="Contraseña de la Empresa" required>
+
+                <button type="submit">Registrar Empresa</button>
+            </form>
+            <p>¿Ya tienes cuenta? <a href="login.php">Inicia sesión</a></p>
+        </div>
+    </div>
+    </main>
+
+    <!-- Popup Message -->
+    <div class="popup-message" id="popupMessage">
+      ¡Registro exitoso! Te hemos enviado una confirmación a tu correo.
+    </div>
+
+    <script>
+      document.getElementById('registrationForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita que la página se recargue
+
+        // Obtener los valores de los inputs
+        const nombre_empresa = document.querySelector('input[name="nombre_empresa"]').value;
+        const correo = document.querySelector('input[name="correo"]').value;
+
+        // Mostrar el mensaje flotante con los datos ingresados
+        const popupMessage = document.getElementById('popupMessage');
+        popupMessage.innerHTML = `¡Registro exitoso! Te hemos enviado una confirmación a tu correo: ${correo}`;
+        popupMessage.classList.add('show');
+
+        // Ocultar el mensaje después de 5 segundos
+        setTimeout(function () {
+          popupMessage.classList.remove('show');
+        }, 5000);
+
+        // Aquí podrías hacer una solicitud AJAX para enviar los datos a un servidor si lo deseas
+      });
+    </script>
+  </body>
+</html>

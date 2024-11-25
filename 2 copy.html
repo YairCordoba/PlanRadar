@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="3.css" />
+    <title>PLAN RADAR</title>
+    <style>
+        /* Estilo para la fila del formulario */
+        .form-row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Estilo para la imagen */
+        .left-image {
+            flex: 1; /* Ocupa 1 parte del contenedor */
+            max-width: 200px; /* Ancho máximo de la imagen */
+            margin-right: 20px; /* Espacio entre la imagen y el formulario */
+            display: flex;
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra verticalmente si la imagen es más pequeña */
+        }
+
+        .left-image img {
+            width: 100%; /* La imagen ocupará todo el contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+            border-radius: 10px; /* Bordes redondeados en la imagen */
+        }
+
+        /* Contenedor del Formulario */
+        .form-container {
+            flex: 2; /* Ocupa 2 partes del contenedor */
+        }
+
+        /* Títulos */
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para los inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #f1a501;
+            outline: none;
+        }
+
+        /* Botón */
+        button {
+            background-color: #f1a501;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #e09401;
+        }
+
+        /* Enlaces */
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p a {
+            color: #f1a501;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+  </head>
+  <body>
+    <main class="main__content__area">
+      <!-- Header Area -->
+      <header class="header-area">
+        <div class="container">
+          <!-- Navbar for Header Menu -->
+          <div class="row justify-content-space-between align-items-center">
+            <!-- Logo Section -->
+            <div class="logo">
+              <a href="index.html">
+                <img src="image-removebg-preview.ico" alt="logo" />
+              </a>
+            </div>
+
+            <!-- Main Navigation Menu -->
+            <div class="main__menu">
+              <nav class="navbar">
+                <ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="PLANES.HTML">PLANES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="F.Usuarios.html">REGISTRO_USUARIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="F.Empresas.html">REGISTRO_EMPRESAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">INICIAR SESIÓN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">EN <i class="fa-solid fa-chevron-down"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- User Registration Section -->
+      <section class="registration-area">
+        <header>
+          <h1>Arma tu Plan</h1>
+          <p>Selecciona las opciones para crear tu día perfecto de diversión en Medellín</p>
+      </header>
+      
+      <div class="container">
+          <form id="planForm">
+              <!-- Número de paradas -->
+              <div class="form-group">
+                  <label for="paradas">¿Cuántas paradas deseas hacer?</label>
+                  <select id="paradas" name="paradas" title="Selecciona cuántas paradas deseas hacer">
+                      <option value="1">1 Parada</option>
+                      <option value="2">2 Paradas</option>
+                      <option value="3">3 Paradas</option>
+                      <option value="4">4 Paradas</option>
+                      <option value="5">5 Paradas</option>
+                  </select>
+              </div>
+      
+              <!-- Categorías -->
+              <div class="form-group">
+                  <label for="categorias">Elige las categorías de entretenimiento:</label>
+                  <select id="categorias" name="categorias" multiple title="Selecciona las categorías que deseas">
+                      <option value="Entretenimiento">Entretenimiento General</option>
+                      <option value="Aventura">Deportes y Aventura</option>
+                      <option value="Familia">Actividades en Familia</option>
+                      <option value="Videojuegos">Juegos Virtuales y Simuladores</option>
+                      <option value="Karaoke">Karaoke y Música</option>
+                  </select>
+              </div>
+      
+              <!-- Mascotas -->
+              <div class="form-group">
+                  <label for="mascotas">¿Te acompañan tus mascotas?</label>
+                  <input type="radio" id="mascotas_si" name="mascotas" value="Si" title="Selecciona si te acompañan tus mascotas"> Sí
+                  <input type="radio" id="mascotas_no" name="mascotas" value="No" title="Selecciona si no te acompañan tus mascotas"> No
+              </div>
+      
+              <!-- Parqueadero -->
+              <div class="form-group">
+                  <label for="parqueadero">¿Necesitas parqueadero?</label>
+                  <input type="radio" id="parqueadero_si" name="parqueadero" value="Si" title="Selecciona si necesitas parqueadero"> Sí
+                  <input type="radio" id="parqueadero_no" name="parqueadero" value="No" title="Selecciona si no necesitas parqueadero"> No
+              </div>
+      
+              <button type="button" class="button" onclick="mostrarPaquete()">Armar mi plan</button>
+          </form>
+      
+          <div class="results" id="results"></div>
+
+          <script>
+            // Aquí definimos la tabla de 50 planes directamente en el código HTML
+            const planes = [
+                { empresa: "Casa de Diversión Medellín", nombre_plan: "Casa de Diversión", descripcion: "Espacio amplio con juegos de salón, billar, ping pong y área para eventos sociales.", precio: "$100,000 COP", categoria: "Entretenimiento", direccion: "Calle 50 # 80-22, Medellín", aceptan_mascotas: "Sí", parqueadero: "Sí", imagen: "https://example.com/imagen1.jpg" },
+                { empresa: "Centro de Entretenimiento City Fun", nombre_plan: "City Fun", descripcion: "Zona de juegos interactivos y área de cine.", precio: "$120,000 COP", categoria: "Entretenimiento", direccion: "Carrera 65 # 42-08, Medellín", aceptan_mascotas: "No", parqueadero: "Sí", imagen: "https://example.com/imagen2.jpg" },
+                { empresa: "La Casa del Karaoke", nombre_plan: "Karaoke", descripcion: "Sala de karaoke con una amplia selección de canciones.", precio: "$80,000 COP", categoria: "Karaoke", direccion: "Calle 47 # 33-17, Medellín", aceptan_mascotas: "Sí", parqueadero: "No", imagen: "https://example.com/imagen3.jpg" },
+                { empresa: "Casa de Escape Room Medellín", nombre_plan: "Escape Room", descripcion: "Juegos de escape room con diferentes temáticas.", precio: "$150,000 COP", categoria: "Aventura", direccion: "Carrera 49 # 78-45, Medellín", aceptan_mascotas: "No", parqueadero: "Sí", imagen: "https://example.com/imagen4.jpg" },
+                { empresa: "Jardín de Entretenimiento La Montaña", nombre_plan: "Jardín de Entretenimiento", descripcion: "Espacio verde para actividades al aire libre.", precio: "$50,000 COP", categoria: "Familia", direccion: "Calle 36 # 10-45, Medellín", aceptan_mascotas: "Sí", parqueadero: "Sí", imagen: "https://example.com/imagen5.jpg" },
+                { empresa: "Karts Medellín", nombre_plan: "Karts", descripcion: "Circuito de karts para todas las edades.", precio: "$70,000 COP", categoria: "Aventura", direccion: "Carrera 32 # 23-11, Medellín", aceptan_mascotas: "No", parqueadero: "Sí", imagen: "https://example.com/imagen6.jpg" },
+                { empresa: "El Mundo del Videojuego", nombre_plan: "Videojuegos", descripcion: "Salas de videojuegos y simuladores virtuales.", precio: "$60,000 COP", categoria: "Videojuegos", direccion: "Calle 59 # 45-12, Medellín", aceptan_mascotas: "Sí", parqueadero: "Sí", imagen: "https://example.com/imagen7.jpg" },
+                { empresa: "Parque Norte", nombre_plan: "Diversión en el Parque", descripcion: "Parque de diversiones con montañas rusas y juegos mecánicos.", precio: "$150,000 COP", categoria: "Aventura", direccion: "Calle 74 # 34-80, Medellín", aceptan_mascotas: "No", parqueadero: "Sí", imagen: "https://example.com/imagen8.jpg" },
+                // ... (hasta 50 planes)
+            ];
+            
+            function mostrarPaquete() {
+                const numParadas = document.getElementById("paradas").value;
+                const categoriasSeleccionadas = Array.from(document.getElementById("categorias").selectedOptions).map(option => option.value);
+            
+                // Filtrar planes solo por categorías seleccionadas
+                const planesFiltrados = planes.filter(plane => categoriasSeleccionadas.includes(plane.categoria));
+            
+                const resultsDiv = document.getElementById("results");
+                resultsDiv.innerHTML = ""; // Limpiar resultados anteriores
+            
+                if (planesFiltrados.length === 0) {
+                    resultsDiv.innerHTML = "<p>No se encontraron planes que coincidan con los filtros seleccionados.</p>";
+                    return;
+                }
+            
+                let paqueteCount = 1;
+                for (let i = 0; i < planesFiltrados.length && paqueteCount <= numParadas; i++) {
+                    const paquete = planesFiltrados[i];
+                    const resultHTML = `
+                        <div class="result-package">
+                            <h3>Paquete ${paqueteCount}: ${paquete.nombre_plan}</h3>
+                            <img src="${paquete.imagen}" alt="${paquete.nombre_plan}">
+                            <p><strong>Descripción:</strong> ${paquete.descripcion}</p>
+                            <p><strong>Precio:</strong> ${paquete.precio}</p>
+                            <p><strong>Dirección:</strong> ${paquete.direccion}</p>
+                        </div>
+                    `;
+                    resultsDiv.innerHTML += resultHTML;
+                    paqueteCount++;
+                }
+            }
+            </script>
+
+      </div>
+      </section>
+    </main>
+  </body>
+</html>

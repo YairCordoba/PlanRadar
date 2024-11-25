@@ -1,0 +1,242 @@
+/* Variables */
+:root {
+    --main-color: #212832;
+    --accent-color: #f1a501;
+    --white: #ffffff;
+    --gray: #5e6282;
+    --shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: 0.3s ease;
+    --body-font: "Poppins", sans-serif;
+    --title-font: "Volkhov", serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    background-color: #f9f9f9;
+    color: var(--main-color);
+  }
+  
+  /* Contenedor principal */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header-area {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: var(--shadow);
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .main__menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .main__menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .main__menu ul li a {
+    display: block;
+    padding: 12px 18px;
+    color: var(--main-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: background-color var(--transition), color var(--transition);
+  }
+  
+  .main__menu ul li a:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Títulos */
+  h1, h2, h3, h4 {
+    font-weight: 700;
+    color: var(--main-color);
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+  
+  /* Sección de Registro */
+  .registration-area {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .registration-area header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .registration-area header p {
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--main-color);
+  }
+  
+  select,
+  input[type="radio"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color var(--transition);
+  }
+  
+  select:focus,
+  input[type="radio"]:focus {
+    border-color: var(--accent-color);
+  }
+  
+  button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  button:hover {
+    background-color: #e09401;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Resultados */
+  .results {
+    margin-top: 40px;
+  }
+  
+  .result-package {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    transition: box-shadow var(--transition);
+  }
+  
+  .result-package:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .result-package img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+  }
+  
+  .result-package h3 {
+    font-size: 24px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+  
+  .result-package p {
+    font-size: 16px;
+    color: var(--gray);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .main__menu ul {
+      text-align: center;
+    }
+  
+    .main__menu ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .logo img {
+      width: 80px;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    .registration-area {
+      padding: 30px 20px;
+    }
+  
+    .form-group label,
+    .form-group select {
+      font-size: 16px;
+    }
+  
+    button {
+      padding: 12px 20px;
+    }
+  }
+  

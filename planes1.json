@@ -1,0 +1,202 @@
+{
+    "empresas": [
+      {
+        "nombre": "Bavaria",
+        "descripcion": "Empresa líder en la industria cervecera en Colombia, conocida por marcas como Águila, Club Colombia y Poker.",
+        "direccion": "Calle 25 # 38-50, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 10 10",
+        "sitio_web": "https://www.bavaria.co",
+        "categoria": "Bebidas",
+        "planes": [
+          {
+            "nombre_plan": "Plan Cervezas Premium",
+            "descripcion": "Descuento en cervezas premium y productos relacionados.",
+            "precio": "$120,000 COP",
+            "imagen": "https://example.com/imagen19.jpg",
+            "categorias": ["Cerveza"]
+          },
+          {
+            "nombre_plan": "Plan Cerveza Familiar",
+            "descripcion": "Paquete de cervezas y bebidas de la marca Bavaria para eventos familiares.",
+            "precio": "$50,000 COP",
+            "imagen": "https://example.com/imagen20.jpg",
+            "categorias": ["Cerveza"]
+          }
+        ]
+      },
+      {
+        "nombre": "Fabricato",
+        "descripcion": "Una de las principales empresas productoras de textiles en Colombia.",
+        "direccion": "Calle 15 # 55-40, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 22 22",
+        "sitio_web": "https://www.fabricato.com",
+        "categoria": "Textiles",
+        "planes": [
+          {
+            "nombre_plan": "Plan Ropa Textil",
+            "descripcion": "Descuentos en ropa y textiles fabricados en Colombia.",
+            "precio": "$80,000 COP",
+            "imagen": "https://example.com/imagen21.jpg",
+            "categorias": ["Textiles"]
+          }
+        ]
+      },
+      {
+        "nombre": "Celsia",
+        "descripcion": "Compañía dedicada a la generación, distribución y comercialización de energía eléctrica.",
+        "direccion": "Carrera 48 # 24-65, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 88 88",
+        "sitio_web": "https://www.celsia.com",
+        "categoria": "Energía",
+        "planes": [
+          {
+            "nombre_plan": "Plan Energía Solar",
+            "descripcion": "Plan de energía solar para hogares con beneficios de autogeneración.",
+            "precio": "$200,000 COP",
+            "imagen": "https://example.com/imagen22.jpg",
+            "categorias": ["Energía Solar"]
+          }
+        ]
+      },
+      {
+        "nombre": "Cementos Argos",
+        "descripcion": "Empresa de fabricación y comercialización de cemento y concreto, con presencia en varios países.",
+        "direccion": "Calle 10 # 23-50, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 55 55",
+        "sitio_web": "https://www.argos.co",
+        "categoria": "Construcción",
+        "planes": [
+          {
+            "nombre_plan": "Plan Construcción Total",
+            "descripcion": "Paquete de cemento y concreto para proyectos de construcción grandes.",
+            "precio": "$500,000 COP",
+            "imagen": "https://example.com/imagen23.jpg",
+            "categorias": ["Construcción"]
+          }
+        ]
+      },
+      {
+        "nombre": "Frutales de Antioquia",
+        "descripcion": "Empresa dedicada a la producción y comercialización de frutas frescas y jugos naturales.",
+        "direccion": "Carrera 60 # 24-40, Medellín, Antioquia",
+        "telefono": "(+57) 604 480 22 11",
+        "sitio_web": "https://www.frutalesantioquia.com",
+        "categoria": "Alimentos y Bebidas",
+        "planes": [
+          {
+            "nombre_plan": "Plan Frutas Frescas",
+            "descripcion": "Descuento en la compra de frutas frescas y jugos naturales.",
+            "precio": "$25,000 COP",
+            "imagen": "https://example.com/imagen24.jpg",
+            "categorias": ["Frutas"]
+          }
+        ]
+      },
+      {
+        "nombre": "Grupo Sancho",
+        "descripcion": "Conglomerado de empresas dedicadas a la distribución de productos de consumo masivo, como alimentos y bebidas.",
+        "direccion": "Calle 52 # 60-70, Medellín, Antioquia",
+        "telefono": "(+57) 604 342 11 99",
+        "sitio_web": "https://www.gruposancho.com",
+        "categoria": "Distribución",
+        "planes": [
+          {
+            "nombre_plan": "Plan Descuento Mayorista",
+            "descripcion": "Descuento en compras mayoristas de productos de consumo masivo.",
+            "precio": "$200,000 COP",
+            "imagen": "https://example.com/imagen25.jpg",
+            "categorias": ["Alimentos", "Bebidas"]
+          }
+        ]
+      },
+      {
+        "nombre": "Comfama",
+        "descripcion": "Caja de compensación familiar que ofrece servicios de salud, educación, recreación y bienestar.",
+        "direccion": "Calle 49 # 65-32, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 77 00",
+        "sitio_web": "https://www.comfama.com.co",
+        "categoria": "Servicios Sociales",
+        "planes": [
+          {
+            "nombre_plan": "Plan Bienestar Familiar",
+            "descripcion": "Plan que incluye servicios de salud, educación y recreación para familias.",
+            "precio": "$100,000 COP",
+            "imagen": "https://example.com/imagen26.jpg",
+            "categorias": ["Educación", "Salud"]
+          }
+        ]
+      },
+      {
+        "nombre": "Crepes & Waffles",
+        "descripcion": "Restaurante y cadena de comida especializada en crepes, waffles y otros platos de cocina internacional.",
+        "direccion": "Calle 10 # 50-70, Medellín, Antioquia",
+        "telefono": "(+57) 604 432 12 34",
+        "sitio_web": "https://www.crepesywaffles.com",
+        "categoria": "Restaurantes",
+        "planes": [
+          {
+            "nombre_plan": "Plan Comida Corporativa",
+            "descripcion": "Descuento en comidas para grupos o eventos corporativos.",
+            "precio": "$500,000 COP",
+            "imagen": "https://example.com/imagen27.jpg",
+            "categorias": ["Restaurantes"]
+          }
+        ]
+      },
+      {
+        "nombre": "Helados La Fama",
+        "descripcion": "Empresa de fabricación y comercialización de helados artesanales, con productos reconocidos en el país.",
+        "direccion": "Carrera 32 # 54-60, Medellín, Antioquia",
+        "telefono": "(+57) 604 250 55 55",
+        "sitio_web": "https://www.la-fama.com",
+        "categoria": "Alimentos y Bebidas",
+        "planes": [
+          {
+            "nombre_plan": "Plan Helados Premium",
+            "descripcion": "Paquete de helados artesanales premium, con variedad de sabores.",
+            "precio": "$40,000 COP",
+            "imagen": "https://example.com/imagen28.jpg",
+            "categorias": ["Alimentos"]
+          }
+        ]
+      },
+      {
+        "nombre": "Rappi",
+        "descripcion": "Aplicación de delivery que ofrece productos de restaurantes, supermercados y tiendas en Medellín y otras ciudades.",
+        "direccion": "Carrera 35 # 10-40, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 12 12",
+        "sitio_web": "https://www.rappi.com",
+        "categoria": "Tecnología y Servicios",
+        "planes": [
+          {
+            "nombre_plan": "Plan Rappi Premium",
+            "descripcion": "Suscripción mensual para entregas gratuitas y beneficios exclusivos.",
+            "precio": "$50,000 COP",
+            "imagen": "https://example.com/imagen29.jpg",
+            "categorias": ["Servicios"]
+          }
+        ]
+      },
+      {
+        "nombre": "Alkosto",
+        "descripcion": "Cadena de tiendas de productos electrónicos, electrodomésticos y artículos para el hogar.",
+        "direccion": "Calle 44 # 58-80, Medellín, Antioquia",
+        "telefono": "(+57) 604 444 00 00",
+        "sitio_web": "https://www.alkosto.com",
+        "categoria": "Electrónica",
+        "planes": [
+          {
+            "nombre_plan": "Plan Tecnología Hogar",
+            "descripcion": "Descuentos en productos electrónicos para el hogar, como televisores y electrodomésticos.",
+            "precio": "$300,000 COP",
+            "imagen": "https://example.com/imagen30.jpg",
+            "categorias": ["Electrónica"]
+          }
+        ]
+      }
+    ],
+    "categorias": [
+      "Energía", "Alimentos", "Bebidas", "Vuelos", "Lácteos", "Restaurantes", "Servicios Sociales", "Textiles", "Construcción", "Electrónica"
+    ]
+  }
+  

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANES</title>
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="PLANES.CSS">
+    <style>
+/* Estilos para la sección de categorías */
+.services {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.heading-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+.category:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para el mensaje flotante */
+.message-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.message-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.message-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.message-content p {
+    font-size: 1rem;
+    color: #666;
+    margin: 15px 0;
+}
+
+/* Estilos para el botón de cierre */
+.close-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #e53935;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <!-- header section starts  -->
+    <section class="header">
+
+        <a href="index.html" class="logo">PLAN RADAR</a>
+
+        <nav class="navbar">
+            <a href="package.php">Arma Tu Plan</a>
+            <a href="F_Usuarios.php">REGISTRO_USUARIOS</a>
+            <a href="F_Empresas.php">REGISTRO_EMPRESAS</a>
+            <a href="login.php">INICIAR SECCION</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </section>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background:url(gettyimages-141477299-612x612.jpg) no-repeat">
+                    <div class="content">
+                        <span>PLAN RADAR</span>
+                        <h3>Explorar la Ciudad</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background:url(gettyimages-141477315-612x612.jpg) no-repeat">
+                    <div class="content">
+                        <span>PLAN RADAR</span>
+                        <h3>Disfrutar de la Plaza Botero</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background:url(gettyimages-515187120-612x612.jpg) no-repeat">
+                    <div class="content">
+                        <span>PLAN RADAR</span>
+                        <h3>Disfrutar de la vida nocturna en El Poblado</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services">
+        <h1 class="heading-title">SERVICIOS</h1>
+        <div class="box-container">
+            <!-- Categorías de la Galería -->
+            <div class="box">
+                <img src="images/icon-1.png" alt="adventure">
+                <h3>Adventure</h3>
+                <p>Disfruta de emocionantes actividades de aventura como rafting y rappel.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-2.png" alt="tour-guide">
+                <h3>Tour Guide</h3>
+                <p>Explora Medellín con guías expertos que te mostrarán lo mejor de la ciudad.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-3.png" alt="trekking">
+                <h3>Trekking</h3>
+                <p>Vive una experiencia única caminando por rutas de trekking en la naturaleza.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-4.png" alt="camp-fire">
+                <h3>Camp Fire</h3>
+                <p>Disfruta de noches al aire libre alrededor de una fogata.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-5.png" alt="off-road">
+                <h3>Off Road</h3>
+                <p>Aventura en vehículos 4x4 en rutas fuera de carretera.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-6.png" alt="camping">
+                <h3>Camping</h3>
+                <p>Pasa una noche bajo las estrellas acampando en la montaña.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-7.png" alt="cultural-tour">
+                <h3>Cultural Tour</h3>
+                <p>Sumérgete en la historia de Medellín a través de su arte y cultura.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-8.png" alt="mountain-biking">
+                <h3>Mountain Biking</h3>
+                <p>Recorre los hermosos paisajes de Medellín en bicicleta de montaña.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-9.png" alt="zoological-tour">
+                <h3>Zoological Tour</h3>
+                <p>Visita zoológicos locales y observa la fauna de la región.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-10.png" alt="food-tour">
+                <h3>Food Tour</h3>
+                <p>Recorre los mejores restaurantes y mercados para probar la gastronomía local.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-11.png" alt="botanical-garden">
+                <h3>Botanical Garden</h3>
+                <p>Relájate en los hermosos jardines botánicos de Medellín.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-12.png" alt="nightlife">
+                <h3>Nightlife</h3>
+                <p>Disfruta de la vibrante vida nocturna en bares y discotecas.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-13.png" alt="paragliding">
+                <h3>Paragliding</h3>
+                <p>Siente la adrenalina mientras vuelas en parapente sobre Medellín.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-14.png" alt="city-tour">
+                <h3>City Tour</h3>
+                <p>Descubre los rincones más icónicos de la ciudad en un tour guiado.</p>
+            </div>
+            <div class="box">
+                <img src="images/icon-15.png" alt="shopping-tour">
+                <h3>Shopping Tour</h3>
+                <p>Visita los mejores centros comerciales y mercados de Medellín.</p>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h1 class="heading-title">SERVICIOS</h1>
+        <div class="box-container">
+            <!-- Categorías -->
+            <div class="category" onclick="showMessage('Adventure', 'Disfruta de emocionantes actividades de aventura como rafting y rappel.')">
+                <h3>Adventure</h3>
+            </div>
+            <div class="category" onclick="showMessage('Tour Guide', 'Explora Medellín con guías expertos que te mostrarán lo mejor de la ciudad.')">
+                <h3>Tour Guide</h3>
+            </div>
+            <div class="category" onclick="showMessage('Trekking', 'Vive una experiencia única caminando por rutas de trekking en la naturaleza.')">
+                <h3>Trekking</h3>
+            </div>
+            <div class="category" onclick="showMessage('Camp Fire', 'Disfruta de noches al aire libre alrededor de una fogata.')">
+                <h3>Camp Fire</h3>
+            </div>
+            <div class="category" onclick="showMessage('Off Road', 'Aventura en vehículos 4x4 en rutas fuera de carretera.')">
+                <h3>Off Road</h3>
+            </div>
+            <div class="category" onclick="showMessage('Camping', 'Pasa una noche bajo las estrellas acampando en la montaña.')">
+                <h3>Camping</h3>
+            </div>
+            <!-- Añadir más categorías aquí si es necesario -->
+        </div>
+    </section>
+    
+    <!-- Mensaje flotante -->
+    <div id="message-popup" class="message-popup">
+        <div class="message-content">
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+            <!-- Botón para cerrar -->
+            <button id="close-btn" class="close-btn">Cerrar</button>
+        </div>
+    </div>
+    
+
+    
+
+    <!-- services section ends -->
+
+    <!-- home about section starts  -->
+
+    <section class="home-about">
+
+        <div class="image">
+            <img src="images/about-img.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Descubre Medellín, la Ciudad de la Eterna Primavera, con Nosotros</h3>
+            <p>Medellín no es solo un destino turístico; es una experiencia que despierta todos los sentidos. Conocida como la "Ciudad de la Eterna Primavera", Medellín combina un clima agradable con un ambiente vibrante y acogedor. Al visitar esta metrópolis, te sumergirás en una rica cultura, una historia fascinante y un desarrollo urbano innovador</p>
+            <p>Desde sus impresionantes transformaciones sociales y urbanísticas hasta su gastronomía deliciosa, Medellín tiene algo para todos. Podrás explorar barrios emblemáticos como la Comuna 13, donde el arte urbano cuenta historias de superación, o perderte en los hermosos paisajes del Parque Arví y el Jardín Botánico</p>
+            <a href="about.php" class="btn">read more</a>
+        </div>
+    </section>
+
+
+            <section class="home-packages">
+                <h1 class="heading-title"> PLANES DISPONIBLES </h1>
+        
+                <div class="swiper plans-swiper">
+                    <div class="swiper-wrapper" id="plans-container">
+                        <!-- Los planes se agregarán dinámicamente aquí -->
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+        
+                <div class="load-more">
+                    <a href="package.php" class="btn">load more</a>
+                </div>
+            </section>
+
+            <div id="planModal" class="modal">
+                <div class="modal-content">
+                    <!-- Botón para cerrar con "X" -->
+                    <span id="closeBtn" class="close-btn">&times;</span>
+                    
+                    <!-- Botón adicional para cerrar -->
+                    
+                    <h2 id="modalPlanName"></h2>
+                    <p id="modalPlanDesc"></p>
+                    <p><strong>Precio: </strong><span id="modalPlanPrice"></span></p>
+                    <p id="modalPlanCompany"></p>
+                </div>
+            </div>
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="PLANES.JS"></script>
+    <script>
+        // Datos JSON con los planes
+        const jsonData = {
+            "planes": [
+                {
+                    "empresa": "EPM (Empresas Públicas de Medellín)",
+                    "nombre_plan": "Plan Energía Básica",
+                    "descripcion": "Plan diseñado para usuarios residenciales con un bajo consumo de energía.",
+                    "precio": "$30,000 COP",
+                    "imagen": "https://via.placeholder.com/300"
+                },
+                {
+                    "empresa": "EPM (Empresas Públicas de Medellín)",
+                    "nombre_plan": "Plan Energía Intermedio",
+                    "descripcion": "Plan intermedio para hogares con un consumo de energía moderado.",
+                    "precio": "$50,000 COP",
+                    "imagen": "https://via.placeholder.com/300"
+                },
+                {
+                    "empresa": "Grupo Nutresa",
+                    "nombre_plan": "Plan Ahorro Alimenticio",
+                    "descripcion": "Descuentos exclusivos en productos de la marca para clientes frecuentes.",
+                    "precio": "$15,000 COP",
+                    "imagen": "https://via.placeholder.com/300"
+                },
+                {
+                    "empresa": "Grupo Nutresa",
+                    "nombre_plan": "Plan Nutrición Balanceada",
+                    "descripcion": "Plan con productos alimenticios saludables y balanceados.",
+                    "precio": "$100,000 COP",
+                    "imagen": "https://via.placeholder.com/300"
+                },
+                {
+                    "empresa": "Postobón",
+                    "nombre_plan": "Plan Refresco Familiar",
+                    "descripcion": "Paquete de refrescos Postobón para el hogar.",
+                    "precio": "$20,000 COP",
+                    "imagen": "https://via.placeholder.com/300"
+                }
+            ]
+        };
+
+        // Función para cargar los planes en el carrusel
+        function loadPlans() {
+            const plansContainer = document.getElementById("plans-container");
+
+            jsonData.planes.forEach(plan => {
+                const planSlide = document.createElement('div');
+                planSlide.classList.add('swiper-slide');
+
+                const planBox = document.createElement('div');
+                planBox.classList.add('box');
+
+                // Imagen del plan
+                const planImage = document.createElement('div');
+                planImage.classList.add('image');
+                const img = document.createElement('img');
+                img.src = plan.imagen;
+                img.alt = plan.nombre_plan;
+                planImage.appendChild(img);
+
+                // Contenido del plan
+                const planContent = document.createElement('div');
+                planContent.classList.add('content');
+
+                const planName = document.createElement('h3');
+                planName.textContent = plan.nombre_plan;
+
+                const planDesc = document.createElement('p');
+                planDesc.textContent = plan.descripcion;
+
+                const planPrice = document.createElement('p');
+                planPrice.classList.add('price');
+                planPrice.textContent = plan.precio;
+
+                const planButton = document.createElement('a');
+                planButton.classList.add('btn');
+                planButton.href = "javascript:void(0)";  // Cambié esto para que no redirija
+                planButton.textContent = 'Book Now';
+
+                // Añadir evento al botón "Book Now"
+                planButton.addEventListener('click', function () {
+                    openModal(plan);
+                });
+
+                // Organizar todo en el box
+                planContent.appendChild(planName);
+                planContent.appendChild(planDesc);
+                planContent.appendChild(planPrice);
+                planContent.appendChild(planButton);
+
+                planBox.appendChild(planImage);
+                planBox.appendChild(planContent);
+
+                planSlide.appendChild(planBox);
+
+                // Añadir el slide al contenedor
+                plansContainer.appendChild(planSlide);
+            });
+
+            // Inicializar Swiper después de que los planes se carguen
+            const swiper = new Swiper('.plans-swiper', {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    480: {
+                        slidesPerView: 1,
+                    },
+                },
+            });
+        }
+
+        // Función para abrir la ventana flotante con los detalles del plan
+        function openModal(plan) {
+            document.getElementById("modalPlanName").textContent = plan.nombre_plan;
+            document.getElementById("modalPlanDesc").textContent = plan.descripcion;
+            document.getElementById("modalPlanPrice").textContent = plan.precio;
+            document.getElementById("modalPlanCompany").textContent = `Empresa: ${plan.empresa}`;
+            document.getElementById("planModal").style.display = "block";
+        }
+
+        // Función para cerrar la ventana flotante
+        document.getElementById("closeBtn").addEventListener('click', function () {
+            document.getElementById("planModal").style.display = "none";
+        });
+
+        // Cargar los planes al cargar la página
+        window.onload = loadPlans;
+        // Función para abrir la ventana flotante con los detalles del plan
+function openModal(plan) {
+    document.getElementById("modalPlanName").textContent = plan.nombre_plan;
+    document.getElementById("modalPlanDesc").textContent = plan.descripcion;
+    document.getElementById("modalPlanPrice").textContent = plan.precio;
+    document.getElementById("modalPlanCompany").textContent = `Empresa: ${plan.empresa}`;
+    document.getElementById("planModal").style.display = "block";
+}
+
+// Función para cerrar la ventana flotante
+function closeModal() {
+    document.getElementById("planModal").style.display = "none";
+}
+
+// Event listener para la "X" (botón de cierre)
+document.getElementById("closeBtn").addEventListener('click', closeModal);
+
+// Event listener para el botón de "Cerrar"
+document.getElementById("closeModalBtn").addEventListener('click', closeModal);
+// Función para mostrar el mensaje flotante con la información del plan
+
+
+    </script>
+</body>
+
+</html>

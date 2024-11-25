@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>PLAN RADAR</title>
+    <style>
+        /* Estilo para la fila del formulario */
+        .form-row {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Estilo para la imagen */
+        .left-image {
+            flex: 1; /* Ocupa 1 parte del contenedor */
+            max-width: 200px; /* Ancho máximo de la imagen */
+            margin-right: 20px; /* Espacio entre la imagen y el formulario */
+            display: flex;
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra verticalmente si la imagen es más pequeña */
+        }
+
+        .left-image img {
+            width: 100%; /* La imagen ocupará todo el contenedor */
+            height: auto; /* Mantiene la relación de aspecto */
+            border-radius: 10px; /* Bordes redondeados en la imagen */
+        }
+
+        /* Contenedor del Formulario */
+        .form-container {
+            flex: 2; /* Ocupa 2 partes del contenedor */
+        }
+
+        /* Títulos */
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Estilos para los inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #f1a501;
+            outline: none;
+        }
+
+        /* Botón */
+        button {
+            background-color: #f1a501;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #e09401;
+        }
+
+        /* Enlaces */
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p a {
+            color: #f1a501;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para el mensaje flotante */
+        .popup-message {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f1a501;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .popup-message.show {
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <main class="main__content__area">
+      <!-- Header Area -->
+      <header class="header-area">
+        <div class="container">
+          <!-- Navbar for Header Menu -->
+          <div class="row justify-content-space-between align-items-center">
+            <!-- Logo Section -->
+            <div class="logo">
+              <a href="index.html">
+                <img src="image-removebg-preview.ico" alt="logo" />
+              </a>
+            </div>
+
+            <!-- Main Navigation Menu -->
+            <div class="main__menu">
+              <nav class="navbar">
+                <ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="2 copy.html">ARMA TU PLAN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="PLANES.HTML">PLANES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="F.Usuarios.html">REGISTRO_USUARIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="F.Empresas.html">REGISTRO_EMPRESAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.php">LOGIN</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- User Registration Section -->
+      <section class="registration-area">
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- Left Image Section -->
+
+            <!-- Registration Form -->
+            <div class="col-12 col-md-6">
+              <div class="form-container">
+                <h2>Registro de Usuario</h2>
+                <form id="registrationForm" method="POST">
+                  <input type="text" name="nombre" id="nombre" placeholder="Nombre" required />
+                  <input type="email" name="correo" id="correo" placeholder="Correo" required />
+                  <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required />
+                  <input type="text" name="cedula" id="cedula" placeholder="Cédula" required />
+
+                  <button type="submit">Registrar Usuario</button>
+                </form>
+                <p>¿Ya tienes cuenta? <a href="login.php">Inicia sesión</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Popup Message -->
+    <div class="popup-message" id="popupMessage">
+      ¡Registro exitoso! Te hemos enviado una confirmación a tu correo.
+    </div>
+
+    <script>
+      document.getElementById('registrationForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita que la página se recargue
+
+        // Obtener los valores de los inputs
+        const nombre = document.getElementById('nombre').value;
+        const correo = document.getElementById('correo').value;
+        const contraseña = document.getElementById('contraseña').value;
+        const cedula = document.getElementById('cedula').value;
+
+        // Mostrar el mensaje flotante con los datos ingresados
+        const popupMessage = document.getElementById('popupMessage');
+        popupMessage.innerHTML = `¡Registro exitoso! Te hemos enviado una confirmación a tu correo: ${correo}`;
+        popupMessage.classList.add('show');
+
+        // Ocultar el mensaje después de 5 segundos
+        setTimeout(function () {
+          popupMessage.classList.remove('show');
+        }, 5000);
+
+        // Aquí podrías hacer una solicitud AJAX para enviar los datos a un servidor si lo deseas
+      });
+    </script>
+  </body>
+</html>
